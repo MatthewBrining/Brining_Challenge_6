@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -17,8 +18,8 @@
 
             <h2>Search for a city:</h2>
             <form id="city-search">
-                <input type="text" name="city" id="city">
-                <button type="submit">Search</button>
+                <input type="text" name="city" id="city" class="citySearch">
+                <button type="submit" class="submitButton">Search</button>
             </form>
 
             <div class="cities">
@@ -39,12 +40,12 @@
     <div class="right-side">
 
         <div class="results-box">
-            <h2>City (03/29/2022</h2>
+            <h2 class="cityLocation">City (03/29/2022)</h2>
             <ul>
-                <li>Temp:</li>
-                <li>Wind:</li>
-                <li>Humidity:</li>
-                <li>UV Index:</li>
+                <li class="currentTemp">Temp:</li>
+                <li class="currentWind">Wind:</li>
+                <li class="currentHumidity">Humidity:</li>
+                <li class="currentUV">UV Index:</li>
             </ul>
         </div>
 
@@ -53,46 +54,46 @@
                 <div id="dayOne">
                     <ul class="card-info" id="infoDayOne">
                         <li class="date card-info-item" id="dateDayOne">03/01/2022</li>
-                        <li class="clipArt card-info-item" id="clipArtOne">Dongus</li>
+                        <li class="clipArt card-info-item" id="clipArtOne">Clip Art</li>
                         <li class="temp card-info-item" id="tempDayOne">Temp: 40 F</li>
                         <li class="wind card-info-item" id="windDayOne">Wind: 5 MPH</li>
-                        <li class="humidity card-info-item" id="HumidityDayOne">Humidity: 30%</li>
+                        <li class="humidity card-info-item" id="humidityDayOne">Humidity: 30%</li>
                     </ul>
                 </div>
                 <div id="dayTwo">
                     <ul class="card-info" id="infoDayTwo">
                         <li class="date card-info-item" id="dateDayTwo">03/01/2022</li>
-                        <li class="clipArt card-info-item" id="clipArtTwo">Dongus</li>
+                        <li class="clipArt card-info-item" id="clipArtTwo">Clip Art</li>
                         <li class="temp card-info-item" id="tempDayTwo">Temp: 40 F</li>
                         <li class="wind card-info-item" id="windDayTwo">Wind: 5 MPH</li>
-                        <li class="humidity card-info-item" id="HumidityDayTwo">Humidity: 30%</li>
+                        <li class="humidity card-info-item" id="humidityDayTwo">Humidity: 30%</li>
                     </ul>
                 </div>
                 <div id="dayThree">
                     <ul class="card-info" id="infoDayThree">
                         <li class="date card-info-item" id="dateDayThree">03/01/2022</li>
-                        <li class="clipArt card-info-item" id="clipArtThree">Dongus</li>
+                        <li class="clipArt card-info-item" id="clipArtThree">Clip Art</li>
                         <li class="temp card-info-item" id="tempDayThree">Temp: 40 F</li>
                         <li class="wind card-info-item" id="windDayThree">Wind: 5 MPH</li>
-                        <li class="humidity card-info-item" id="HumidityDayThree">Humidity: 30%</li>
+                        <li class="humidity card-info-item" id="humidityDayThree">Humidity: 30%</li>
                     </ul>
                 </div>
                 <div id="dayFour">
                     <ul class="card-info" id="infoDayFour">
                         <li class="date card-info-item" id="dateDayFour">03/01/2022</li>
-                        <li class="clipArt card-info-item" id="clipArtFour">Dongus</li>
+                        <li class="clipArt card-info-item" id="clipArtFour">Clip Art</li>
                         <li class="temp card-info-item" id="tempDayFour">Temp: 40 F</li>
                         <li class="wind card-info-item" id="windDayFour">Wind: 5 MPH</li>
-                        <li class="humidity card-info-item" id="HumidityDayFour">Humidity: 30%</li>
+                        <li class="humidity card-info-item" id="humidityDayFour">Humidity: 30%</li>
                     </ul>
                 </div>
                 <div id="dayFive">
                     <ul class="card-info" id="infoDayFive">
                         <li class="date card-info-item" id="dateDayFive">03/01/2022</li>
-                        <li class="clipArt card-info-item" id="clipArtFive">Dongus</li>
+                        <li class="clipArt card-info-item" id="clipArtFive">Clip Art</li>
                         <li class="temp card-info-item" id="tempDayFive">Temp: 40 F</li>
                         <li class="wind card-info-item" id="windDayFive">Wind: 5 MPH</li>
-                        <li class="humidity card-info-item" id="HumidityDayFive">Humidity: 30%</li>
+                        <li class="humidity card-info-item" id="humidityDayFive">Humidity: 30%</li>
                     </ul>
                 </div>
             </div>
